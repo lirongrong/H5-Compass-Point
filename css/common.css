@@ -1,0 +1,236 @@
+/*base_css background: #6a0000; */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{font-size: 100px; font-family: Arial, Helvetica, sans-serif;}
+body{ font-size: 12px; background: #6a0000;}
+html, body {
+    height: 100%;
+}
+.pr{ position: relative;}
+.pa{ position: absolute;}
+.tc{ text-align: center;}
+.colyellow{ color: #d7a557; }
+.f18{ font-size: .24rem; line-height: .24rem; }
+.f14{ font-size: .14rem; line-height: .2rem; }
+.f12{ font-size: .12rem; line-height: .18rem;}
+.fbold{ font-weight: bold;}
+.mt20{ margin-top: .2rem;} 
+.mt10{ margin-top:.1rem;}
+a{ text-decoration:none;}
+li{list-style:none;}
+
+
+
+
+/*common_css*/
+
+.zhizhen{ width: .5rem; height: auto; left: 50%; top: -0.26rem; margin-left:-0.18rem;}
+.note{ left: 50%; top: 1.42rem; width: 2rem; margin-left:-1rem;}
+.note .f18{ font-size: .4rem;}
+.note .f14{ font-size: .12rem;  margin-top: .04rem; display: block; line-height: .14rem;}
+.text{ width: 2rem; height: auto; margin: 1.1rem auto 0; display: block;}
+.text .f12{color:#d7a557;}
+/**page2*/
+.test{ width: 64%; margin: .6rem auto; color: #d7a557; } 
+.test .f12{ font-size:.14rem; line-height:.24rem;}
+
+.dess {
+    border: dashed #d7a557;
+    border-width: 0 0 1px;
+    margin-top: .1rem;
+    padding: 0 0 .1rem;
+    position:relative;
+}
+    .dess:before {
+        width: .14rem;
+        height: .14rem;
+        content: '';
+        position: absolute;
+        left:-0.2rem;
+        top:.05rem;
+        background: url(../images/icon.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    #allmap {
+        width: 100%;
+        height: 1.4rem;
+        margin-top: .1rem;
+    }
+
+.all{ top:.6rem;}
+
+/**Ô²ÅÌÐ§¹û*/
+.yuanpan {
+    width: 3.1rem;
+    height: 3.1rem;
+    margin: 0 auto;
+    padding: 0;
+}
+    .yuanpan img{width:100%; height:auto;} 
+
+.layer:nth-child(1) {
+    opacity: 0.15;
+}
+
+    .layer:nth-child(1) button {
+        -webkit-transform: rotate(150deg);
+    }
+
+.layer:nth-child(2) {
+    opacity: 0.30;
+}
+
+    .layer:nth-child(2) button {
+        -webkit-transform: rotate(120deg);
+    }
+
+.layer:nth-child(3) {
+    opacity: 0.45;
+}
+
+    .layer:nth-child(3) button {
+        -webkit-transform: rotate(90deg);
+    }
+
+.layer:nth-child(4) {
+    opacity: 0.60;
+}
+
+    .layer:nth-child(4) button {
+        -webkit-transform: rotate(60deg);
+    }
+
+.layer:nth-child(5) {
+    opacity: 0.75;
+}
+
+    .layer:nth-child(5) button {
+        -webkit-transform: rotate(30deg);
+    }
+
+.layer:nth-child(6) {
+    opacity: 0.90;
+}
+
+    .layer:nth-child(6) button {
+    }
+
+    /**swiper*/
+.swiper-container { width:100%; height:100%;}
+.swiper-slide {
+    width: 100%;
+    height: 100%; 
+}
+
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    opacity: .4;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #d7a557;
+}
+
+#array {
+    position: absolute;
+    z-index: 999;
+    -webkit-animation: arrow 1.5s infinite ease-in-out;
+    width: .2rem;
+    height: .15rem; 
+    left:50%;
+    bottom: .2rem;
+    margin-left: -0.1rem;
+} 
+@-webkit-keyframes arrow {
+    0%,30% {
+        opacity: 0;
+        -webkit-transform: translate(0,10px);
+    }
+
+    60% {
+        opacity: .5;
+        -webkit-transform: translate(0,0);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0,-8px);
+    }
+}
+
+@-moz-keyframes arrow {
+    0%,30% {
+        opacity: 0;
+        -moz-transform: translate(0,10px);
+    }
+
+    60% {
+        opacity: .5;
+        -moz-transform: translate(0,0);
+    }
+
+    100% {
+        opacity: 0;
+        -moz-transform: translate(0,-8px);
+    }
+}
+
+@keyframes arrow {
+    0%,30% {
+        opacity: 0;
+        transform: translate(0,10px);
+    }
+
+    60% {
+        opacity: .5;
+        transform: translate(0,0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0,-8px);
+    }
+}
+
+.round {
+    animation: round 40s infinite linear;
+    -webkit-animation: round 40s infinite linear;
+}
+@keyframes round{
+    0% { 
+        transform: rotate(0deg);
+    } 
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes round{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes round{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.page03text {
+    width:20%;height:auto; margin-top:1rem;
+}
+.bg_maisui {
+    width:50%; height:auto; position:fixed; bottom:0; right:0; display:none;
+}

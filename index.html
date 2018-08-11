@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文王酒业建厂60周年庆典</title> 
+    <link rel="stylesheet" href="js/swiper/css/swiper.min.css">
+    <link href="css/common.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=BPzxUI7NTzsptAj2W34ePl9O"></script>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--page1-->
+            <div class="swiper-slide">
+                <div class="pr all">
+                    <ul class="yuanpan" id="scene">
+                        <li><img src="images/paper.png"></li>
+                    </ul>
+                    <img src="images/zhen.png" class="zhizhen pa" />
+                    <div id="dushu" style="display:none;"></div>
+                    <div id="year" style="display:none;"></div>
+                    <div class="pa tc colyellow note">
+                        <h2 class="year f18"></h2>
+                        <span class="name f14"></span>
+                    </div>
+                </div> 
+            </div>
+            <!--page2-->
+            <div class="swiper-slide colyellow f18">
+                第二页
+            </div> 
+        </div>
+        <img src="images/arrow.png" id="array" />
+        <div class="swiper-pagination"></div> 
+    </div>
+    <script src="js/swiper/js/swiper.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function () {
+            //表盘随着手机360°转动
+            // var activeOne = new Active({
+            //     point: '',//指针
+            //     plate: 'alpha',//表盘
+            // });
+            //指针随着手机360°转动
+            // var activeOne = new Active({
+            //     point: 'alpha',//指针
+            //     plate: '',//表盘
+            // });
+            //指针重力动
+            // var activeOne = new Active({
+            //     point: 'gravity',//指针
+            //     plate: '',//表盘
+            // });
+            //表盘重力动
+            var activeOne = new Active({
+                point: 'gravity',//指针
+                plate: 'gravity',//表盘
+            });
+        })
+    </script>
+</body>
+</html>
