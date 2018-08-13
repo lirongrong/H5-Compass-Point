@@ -1,6 +1,6 @@
 
 /**
- * 文王贡酒60周年庆
+ * 活动h5
  * @param {any} options
  */
 function Active(options) {
